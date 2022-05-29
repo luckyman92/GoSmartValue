@@ -5,18 +5,14 @@ import Slider from "react-slick";
 import Header from '../Header';
 import Footer from '../Footer';
 import Index4Tab from '../../Element/Index4Tab';
-// import ExploreCarousel from '../../Element/ExploreCarousel';
-// import TestimonialStyle2 from '../../Element/TestimonialStyle2';
+import ExploreCarousel from '../../Element/ExploreCarousel';
+import TestimonialStyle2 from '../../Element/TestimonialStyle2';
 
 //Images..
+import bg3 from '../../images/background/bg3.png';
+import bg17 from './../../images/background/bg17.jpg';
 import bgimg from './../../images/1gosmartvalue/home/Home.png';
-// import picjoin from './../../images/1gosmartvalue/home/join-us.png';
-// import bg16 from './../../images/background/bg16.jpg';
-// import bg17 from './../../images/background/bg17.jpg';
-
-
-// import bg3 from './../../images/background/bg3.png';
-// import bg1 from './../../images/1gosmartvalue/home/Home.png';
+import picjoin from './../../images/1gosmartvalue/home/join-us.png';
 
 
 const wraperBlog = [
@@ -85,6 +81,7 @@ class Homepage extends Component {
         return (
             <>
                 <Header />
+
                 <div className="page-content bg-white rubik">
 
 					<div className="home-banner" style={{backgroundImage:"url("+ bgimg +")" }}>
@@ -122,7 +119,7 @@ class Homepage extends Component {
                         </div>
                         {/* <!-- Testimonial End --> */}
                         {/* <!-- Why Chose Us --> */}
-                        {/* <div className="section-full bg-blue-light content-inner explore-projects" style={{ backgroundImage: "url(" + bg3 + ")" }}>
+                        <div className="section-full bg-blue-light content-inner explore-projects" style={{ backgroundImage: "url(" + bg3 + ")" }}>
 							<div className="container">
                                 <div className="section-content">
                                     <div className="row">
@@ -135,17 +132,17 @@ class Homepage extends Component {
                                                 <h1>Corporate</h1>
                                             </Slider>
                                         </div>
-                                    </div> */}
+                                    </div>
                                     {/* <!-- blog post Carousel with no margin --> */}
-                                    {/* <div className="">
+                                    <div className="">
 										<ExploreCarousel /> 
                                     </div>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
                         {/* <!-- Why Chose Us End --> */}
                         {/* <!-- About Us --> */}
-                        {/* <div className="section-full industry-service content-inner" style={{ backgroundImage: "url(" + bg17 + ")" }}>
+                        <div className="section-full industry-service content-inner" style={{ backgroundImage: "url(" + bg17 + ")" }}>
                             <div className="container">
                                 <div className="section-content">
                                     <div className="row">
@@ -166,10 +163,10 @@ class Homepage extends Component {
                                     </div>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
                         {/* <!-- About Us End --> */}
                         {/* <!-- Testimonial --> */}
-                        {/* <div className="section-full bg-blue-light overlay-primary gradient subscribe-bx content-inner explore-projects" style={{ backgroundImage: "url(" + bg3 + ")" }}>
+                        <div className="section-full bg-blue-light overlay-primary gradient subscribe-bx content-inner explore-projects" style={{ backgroundImage: "url(" + bg3 + ")" }}>
                             <div className="container">
                                 <div className="section-content">
                                     <div className="row">
@@ -177,17 +174,17 @@ class Homepage extends Component {
                                             <h2 className="m-b0 font-40">Flat 20% off Premium Accounts</h2>
                                             <h4>Get 20% off premium accounts with the code SMART2021. Offer ends October</h4>
                                         </div>
-                                    </div> */}
+                                    </div>
                                     {/* <!-- blog post Carousel with no margin --> */}
-                                    {/* <div className="">
+                                    <div className="">
 										<ExploreCarousel /> 
                                     </div>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
                         {/* <!-- Testimonial End --> */}
                         {/* <!-- About Us --> */}
-                        {/* <div className="section-full content-inner bg-white">
+                        <div className="section-full content-inner bg-white">
                             <div className="container">
                                 <div className="max-w800 m-auto text-center">
                                     <h2 className="m-b0 font-40">Why Us?</h2>
@@ -210,10 +207,10 @@ class Homepage extends Component {
                                     <Link to={'about-1'} className="site-button">Subscribe</Link>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
                         {/* <!-- About Us End--> */}
                         {/* <!-- Clients Words --> */}
-                        {/* <div className="section-full overlay-primary-middle content-inner bg-img-fix" style={{ backgroundImage: "url(" + bg1 + ")" }}>
+                        <div className="section-full overlay-primary-middle content-inner bg-img-fix" style={{ backgroundImage: "url(" + bgimg + ")" }}>
                             <div className="container">
                                 <div className="max-w600 m-auto text-center m-b30 text-white">
                                     <h2 className="m-t0">Our team</h2>
@@ -224,7 +221,7 @@ class Homepage extends Component {
                                     <TestimonialStyle2  />
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
                         {/* <!-- Clients Words END --> */}
                     </div>
                     {/* <!-- contact area END --> */}

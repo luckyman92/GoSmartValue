@@ -3,9 +3,9 @@ import Slider from "react-slick";
 import {Link} from 'react-router-dom';
 
 //Images
-import industry1 from './../../images/1gosmartvalue/promo/promo-1.png';
-import industry2 from './../../images/1gosmartvalue/promo/promo-2.png';
-import industry3 from './../../images/1gosmartvalue/promo/promo-3.png';
+import industry1 from '../images/1gosmartvalue/promo/promo-1.png';
+import industry2 from '../images/1gosmartvalue/promo/promo-2.png';
+import industry3 from '../images/1gosmartvalue/promo/promo-3.png';
 
 // images/1gosmartvalue/promo/promo-3.jpg
 

@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import Slider from "react-slick";
 
 //Images
-import pic1 from './../../../images/testimonials/pic1.jpg';
-import pic2 from './../../../images/testimonials/pic2.jpg';
-import pic3 from './../../../images/testimonials/pic3.jpg';
+import pic1 from '../images/testimonials/pic1.jpg';
+import pic2 from '../images/testimonials/pic2.jpg';
+import pic3 from '../images/testimonials/pic3.jpg';
 
 
 const contentBlog =[
