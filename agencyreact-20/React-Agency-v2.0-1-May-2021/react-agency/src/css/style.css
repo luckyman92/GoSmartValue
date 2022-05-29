@@ -13425,7 +13425,7 @@ ol.commentlist li .star-rating {
     color: #ffffff;
     display: table;
     height: 50px;
-    left: 10px;
+    right: 10px;
     min-width: 50px;
     position: fixed;
     text-align: center;
@@ -13466,7 +13466,7 @@ ol.commentlist li .star-rating {
 	transition:all 0.5s;
 	-webkit-transition:all 0.5s;
 	-moz-transition:all 0.5s;
-	text-transform:uppercase;
+	/* text-transform:uppercase; */
 }
 .theme-btn:hover span{
 	opacity:1;

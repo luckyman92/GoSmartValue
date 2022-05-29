@@ -1,5 +1,5 @@
 import React,{ useEffect, useState } from 'react';
-import Markup from './markup/Markup';
+import Router from './View/Router';
 import useScrollPosition from "use-scroll-position";
 import './css/plugins.css';
 import './css/style.css';
@@ -30,7 +30,7 @@ function App() {
 	}
   return (
     <div className="App">
-      <Markup />
+      <Router />
     </div>
   );
 }
