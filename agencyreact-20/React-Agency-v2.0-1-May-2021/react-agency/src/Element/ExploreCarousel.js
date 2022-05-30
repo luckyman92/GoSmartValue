@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import Slider from "react-slick";
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
+
+import SubScription from './SubScription';
 
 //Images
 import industry1 from '../images/1gosmartvalue/promo/promo-1.png';
@@ -76,14 +78,7 @@ class ExploreCarousel extends Component{
 				<Slider className="explore-carousel mfp-gallery owl-loaded owl-theme owl-carousel gallery owl-btn-center-lr owl-btn-2 primary " {...settings}>
 					{contentBlog.map((data,index)=>(
 						<div className="item p-3" key={index}>
-							<div className="dlab-box">
-								<div className="dlab-media dlab-img-effect rotate"> <Link to={"#"}><img src={data.images} alt="" /></Link> </div>
-								<div className="dlab-info bg-white">
-									<h5 className="dlab-title m-t0"><Link to={"#"}>{data.title}</Link></h5>
-									<p className="m-b0">Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur...</p>
-								</div>
-								<Link to={"#"} className="site-button btn-block d-flex justify-content-between white"><span>Read More</span> <i className="ti-arrow-right"></i></Link>
-							</div>
+							<SubScription />
 						</div>
 					))}					
 				</Slider>

@@ -442,6 +442,9 @@ strong {
 .font-weight-900 {
     font-weight: 900;
 }
+.font-weight-bold {
+    font-weight: bold;
+}
 /*---------------------------------------------------------------
 4. LISTS
 ---------------------------------------------------------------*/
@@ -9678,7 +9681,6 @@ ul[class*="list-"]{
 }
 .modal .modal-body {
     padding: 25px;
-    height: 500px;
 }
 .modal-xlg {
     width: 1000px;
@@ -13158,6 +13160,34 @@ ol.commentlist li .star-rating {
 }
 .g-recaptcha > div{
 	width:250px !important; 
+}
+.subscribe-form-tag{
+    background-color: #d3e1f3;
+    color: #33a8e2;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 7px;
+}
+.subscribe-form-tag-blue{
+    background-color: #d3e1f3;
+    color: #33a8e2;
+}
+.subscribe-form-tag-black{
+    background-color: #bebebe;
+    color: #000;
+}
+.subscribe-form-tag-white{
+    background-color: #303030;
+    color: #fff;
+}
+.subscribe-form-tag-red{
+    background-color: #fedde0;
+    color: #fd4f64;
+}
+.subscribe-form-tag-green{
+    background-color: #d1eae4;
+    color: #179877;
 }
 /* Google Recaptcha */
 @media screen and (max-width: 991px){

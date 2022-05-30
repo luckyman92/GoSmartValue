@@ -12,21 +12,28 @@ import PropertyFeaturesForm from '../../View/FirstPage/PropertyFeaturesForm';
 import ReportTypeForm from '../../View/FirstPage/ReportTypeForm';
 import SummaryForm from '../../View/FirstPage/SummaryForm';
 
-
-
 //Images..
 import bg3 from '../../images/background/bg3.png';
+import bg11 from './../../images/background/bg11.jpg';
 import bg17 from './../../images/background/bg17.jpg';
 import bgimg from './../../images/1gosmartvalue/home/Home_3.png';
 import picjoin from './../../images/1gosmartvalue/home/join-us.png';
 import bgslider9 from './../../images/main-slider/slide9.jpg';
-
+import grid1 from './../../images/promo/promo-1.jpg';
+import grid2 from './../../images/promo/promo-1.jpg';
+import grid3 from './../../images/promo/promo-1.jpg';
 
 
 const wraperBlog = [
-	{icon: <i className="ti-headphone-alt" />, title: 'Reliability', content: 'Receive a notification for each stage of your valuation process ensuring that you know how far your valuer has progressed and when to expect your report'},
-	{icon: <i className="ti-desktop" />, title: 'Data', content: 'We provide you with the underlying data and statistics that have informed your property'},
-	{icon: <i className="ti-ruler-pencil" />, title: 'Efficiency', content: 'Receive a notification for each stage of your valuation process ensuring that you know how far your valuer has progressed and when to expect your report'},
+	{icon: <i className="fa fa-thumbs-up" />, title: 'Reliability', content: 'Receive a notification for each stage of your valuation process ensuring that you know how far your valuer has progressed and when to expect your report'},
+	{icon: <i className="flaticon-bar-chart" />, title: 'Data', content: 'We provide you with the underlying data and statistics that have informed your property'},
+	{icon: <i className="fa fa-cog" />, title: 'Efficiency', content: 'Receive a notification for each stage of your valuation process ensuring that you know how far your valuer has progressed and when to expect your report'},
+];
+
+const gridBlog = [
+	{	image: grid1, icon: <i className="flaticon-money" />, title: 'Business Planning, Strategy & Execution', },
+	{	image: grid2, icon: <i className="flaticon-bar-chart" />, title: 'Financial Projections And Analysis', },
+	{	image: grid3, icon: <i className="flaticon-notebook" />, title: 'International Business Opportunities', },
 ];
 
 
@@ -144,8 +151,8 @@ class Homepage extends Component {
                     {/* <!-- contact area --> */}
                     <div className="content-block">
 
-                        {/* <!-- Why Chose Us --> */}
-                        <div className="section-full bg-blue-light content-inner explore-projects" style={{ backgroundImage: "url(" + bg3 + ")" }}>
+                        {/* <!-- Subscriptions --> */}
+                        <div className="section-full content-inner explore-projects" style={{ backgroundImage: "url(" + bg3 + ")" }}>
 							<div className="container">
                                 <div className="section-content">
                                     <div className="row">
@@ -166,8 +173,8 @@ class Homepage extends Component {
                                 </div>
                             </div>
                         </div>
-                        {/* <!-- Why Chose Us End --> */}
-                        {/* <!-- About Us --> */}
+                        {/* <!-- Subscriptions End --> */}
+                        {/* <!-- Join Us --> */}
                         <div className="section-full industry-service content-inner" style={{ backgroundImage: "url(" + bg17 + ")" }}>
                             <div className="container">
                                 <div className="section-content">
@@ -190,26 +197,33 @@ class Homepage extends Component {
                                 </div>
                             </div>
                         </div>
-                        {/* <!-- About Us End --> */}
-                        {/* <!-- Testimonial --> */}
-                        <div className="section-full bg-blue-light overlay-primary gradient subscribe-bx content-inner explore-projects" style={{ backgroundImage: "url(" + bg3 + ")" }}>
+                        {/* <!-- Join Us End --> */}
+                        {/* <!-- Flat 20% off --> */}
+                        <div className="section-full content-inner bg-img-fix" style={{ backgroundImage: "url(" + bg11 + ")" }}>
                             <div className="container">
-                                <div className="section-content">
-                                    <div className="row">
-                                        <div className="col-md-12 col-lg-12 section-head text-center">
-                                            <h2 className="m-b0 font-40">Flat 20% off Premium Accounts</h2>
-                                            <h4>Get 20% off premium accounts with the code SMART2021. Offer ends October</h4>
-                                        </div>
+                                <div className="row">
+                                    <div className="col-md-12 col-lg-12 text-center section-head">
+                                        <h2 className="font-weight-700 max-w700 m-auto">Flat 20% off Premium Accounts</h2>
+                                        <h4>Get 20% off premium accounts with the code SMART2021. Offer ends October</h4>
                                     </div>
-                                    {/* <!-- blog post Carousel with no margin --> */}
-                                    <div className="">
-										<ExploreCarousel /> 
-                                    </div>
+                                </div>
+                                <div className="row">
+									{gridBlog.map((item,index)=>(
+										<div className="col-md-6 col-lg-4 col-sm-6 m-b30" key={index}>
+											<div className="dlab-box">
+												<div className="dlab-media dlab-img-overlay5"> <Link to={"#"}><img src={item.image} alt="" /></Link> </div>
+												<div className="dlab-info p-a30 border-1 bg-white">
+													<h5 className="dlab-title m-t0"><Link to={"#"}>{item.title}</Link></h5>
+													<p className="m-b15">Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur Fusce varius [...] </p>
+												</div>
+											</div>
+										</div>
+									))}
                                 </div>
                             </div>
                         </div>
-                        {/* <!-- Testimonial End --> */}
-                        {/* <!-- About Us --> */}
+                        {/* <!-- Flat 20% off End --> */}
+                        {/* <!-- Why Us --> */}
                         <div className="section-full content-inner bg-white">
                             <div className="container">
                                 <div className="max-w800 m-auto text-center">
@@ -234,8 +248,8 @@ class Homepage extends Component {
                                 </div>
                             </div>
                         </div>
-                        {/* <!-- About Us End--> */}
-                        {/* <!-- Clients Words --> */}
+                        {/* <!-- Why Us End--> */}
+                        {/* <!-- Our team --> */}
                         <div className="section-full overlay-primary-middle content-inner bg-img-fix" style={{ backgroundImage: "url(" + bgimg + ")" }}>
                             <div className="container">
                                 <div className="max-w600 m-auto text-center m-b30 text-white">
@@ -248,7 +262,7 @@ class Homepage extends Component {
                                 </div>
                             </div>
                         </div>
-                        {/* <!-- Clients Words END --> */}
+                        {/* <!-- Our team END --> */}
                     </div>
                     {/* <!-- contact area END --> */}
                 </div>

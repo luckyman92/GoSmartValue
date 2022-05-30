@@ -10,20 +10,20 @@ class LogIn extends Component {
         <>
           {/* <Header /> */}
           <div className="page-content">
-            <div className="section-full content-inner shop-account">
+            <div className="section-full shop-account">
               <div className="container">
                 <div className="row">
                   <div className="col-md-12 text-center">
-                    <h2 className="font-weight-700 m-t0 m-b30 text-white">Login Your Account</h2>
+                    <h2 className="font-weight-700 m-t0 m-b30 text-primary">Login Your Account</h2>
                   </div>
                 </div>
                 <div>
                   <div className="max-w500 m-auto m-b30 bg-white">
                     <div className="p-a30 border-1 seth">
-                      <div className="tab-content nav">
+                      <div className="tab-content">
                         <form id="login" className="tab-pane active col-12 p-a0 ">
-                          <h4 className="font-weight-700">LOGIN</h4>
-                          <p className="font-weight-600">If you have an account with us, please log in.</p>
+                          <h4 className="font-weight-700 text-center">LOGIN</h4>
+                          <p className="font-weight-600 text-center">If you have an account with us, please log in.</p>
                           <div className="form-group">
                             <label className="font-weight-700">E-MAIL *</label>
                             <input name="email" required="name require" className="form-control" placeholder="Your Email Id" type="email" />

@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import pic1 from '../images/logo.png';
+import pic1 from '../images/1gosmartvalue/layout/images/smart-logo.png';
 
 class Footer extends Component {
     render() {
       return (
         <>
-          <footer className="site-footer text-uppercase">
-            <div className="footer-top bg-primary">
-              <div className="container-fluid" >
+          <footer className="site-footer text-uppercase footer-white business-footer">
+            <div className="footer-top">
+              <div className="container" >
                 <div className="row">
                   <div className="col-5 col-lg-3 col-md-6 col-sm-6 footer-col-4">
                     <div className='text-center'>
@@ -46,7 +46,6 @@ class Footer extends Component {
                       <h5 className="m-b30 text-white">Subscribe To Our Newsletter</h5>
                       <div className="subscribe-form m-b20">
                         <form className="dzSubscribe" action="script/mailchamp.php" method="post">
-                          <div className="dzSubscribeMsg"></div>
                           <div className="input-group">
                             <input name="dzEmail" required="required" className="form-control" placeholder="Your Email Id" type="email" />
                             <span className="input-group-btn">

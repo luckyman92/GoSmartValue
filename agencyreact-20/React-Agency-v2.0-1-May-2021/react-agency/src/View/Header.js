@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import smartlogo from '../images/1gosmartvalue/layout/images/favicons/smart_log_45x45.png';
-import smartMarkup from '../images/1gosmartvalue/layout/images/smart-w.PNG';
 
 class Header extends Component {
+    state = {
+        activeTab: '0'
+    }
+
 	componentDidMount() {
-        // sidebar open/close
 		
         var Navicon = document.querySelector('.navicon');
         var sidebarmenu = document.querySelector('.myNavbar ');
@@ -36,18 +38,22 @@ class Header extends Component {
 			}, 100);			
         }
 	}
+
+    changeTab = (index) => {
+        this.setState({activeTab: index});
+    }
 	
     render() {
         return (
             <>
-                <header className="site-header header mo-left header-transparent" id="fix-header">
+                <header className="site-header header-transparent header mo-left header-seo" id="fix-header">
                     <div className="sticky-header main-bar-wraper navbar-expand-lg">
                         <div className="main-bar clearfix">
                             <div className="container clearfix">
 
                                 <div className="logo-header mostion">
-                                    <Link to={'/home'} className="dez-page"><img src={smartlogo} alt="" /></Link>
-                                    <Link to={'/home'} className="dez-page"><img src={smartMarkup} alt="" /></Link>
+                                    <Link to={'/home'} className="dez-page" onClick={(e) => this.changeTab("0")}><img src={smartlogo} alt="" /></Link>
+                                    <Link to={'/home'} className="dez-page" onClick={(e) => this.changeTab("0")}><h5 className='text-primary sub-title' style={{paddingTop:'12px', paddingLeft:'20px'}}>GoSmartValue</h5></Link>
                                 </div>
 
                                 <button className="navbar-toggler collapsed navicon justify-content-end" type="button"  data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,23 +65,23 @@ class Header extends Component {
                                 <div className="extra-nav">
                                     <div className="extra-cell">
                                         <Link to={'/Auth'} className="dez-page site-button primary">Login</Link>&nbsp;
-                                        <Link to={'/Auth'} className="dez-page site-button primary">Register</Link>
+                                        {/* <Link to={'/Auth'} className="dez-page site-button primary">Register</Link> */}
                                     </div>
                                 </div>
                                 <div className="header-nav navbar-collapse collapse myNavbar justify-content-end" id="navbarNavDropdown">
                                     {/*  Header Menu Contents  */}
 										<ul className="nav navbar-nav">
-                                            <li><Link to={'/Subscriptions'}>Subscriptions</Link>                                                
+                                            <li><Link to={'/Subscriptions'} onClick={(e) => this.changeTab("1")} className='font-weight-bold' style={this.state.activeTab === '1' ? {color:'green'} : {color:'#4a4a4a'}}>Subscriptions</Link>                                                
                                             </li>
-                                            <li><Link to={'/Valuations'}>Valuations</Link>                                                
+                                            <li><Link to={'/Valuations'} onClick={(e) => this.changeTab("2")} className='font-weight-bold' style={this.state.activeTab === '2' ? {color:'green'} : {color:'#4a4a4a'}}>Valuations</Link>                                                
                                             </li>
-                                            <li><Link to={'/Reports'}>Reports</Link>                                                
+                                            <li><Link to={'/Reports'} onClick={(e) => this.changeTab("3")} className='font-weight-bold' style={this.state.activeTab === '3' ? {color:'green'} : {color:'#4a4a4a'}}>Reports</Link>                                                
                                             </li>
                                             {/* <li><Link to={''}>Our Portfolio</Link>                                                
                                             </li> */}
-                                            <li><Link to={'#'}>News</Link>
+                                            <li><Link to={'#'} onClick={(e) => this.changeTab("4")} className='font-weight-bold' style={this.state.activeTab === '4' ? {color:'green'} : {color:'#4a4a4a'}}>News</Link>
                                             </li>
-                                            <li><Link to={'/ContactUs'}>Contact us</Link>
+                                            <li><Link to={'/ContactUs'} onClick={(e) => this.changeTab("5")} className='font-weight-bold' style={this.state.activeTab === '5' ? {color:'green'} : {color:'#4a4a4a'}}>Contact us</Link>
                                             </li>
                                         </ul>
 									{/*  Header Menu Contents End */}
