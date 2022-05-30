@@ -3,12 +3,15 @@ import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import { TabContent, TabPane, } from 'reactstrap';
 
-import TabStyle1 from '../../View/FirstPage/TabStyle1';
 import ExploreCarousel from '../../Element/ExploreCarousel';
 import TestimonialStyle2 from '../../Element/TestimonialStyle2';
+import TabStyle1 from '../../View/FirstPage/TabStyle1';
 import LocationForm from "../../View/FirstPage/LocationForm"
 import PropertyDetailsForm from '../../View/FirstPage/PropertyDetailsForm';
 import PropertyFeaturesForm from '../../View/FirstPage/PropertyFeaturesForm';
+import ReportTypeForm from '../../View/FirstPage/ReportTypeForm';
+import SummaryForm from '../../View/FirstPage/SummaryForm';
+
 
 
 //Images..
@@ -120,92 +123,12 @@ class Homepage extends Component {
                                                     toggle = {this.toggle}/>
                                             </TabPane>
                                             <TabPane tabId="4">
-                                                <div className="bg-white text-black p-a30 p-t40 align-self-center">
-                                                    <h2 className='text-primary'>Report Type</h2>
-                                                    <div className='row'>
-                                                        <div className="col-lg-6 col-md-12 col-sm-12 m-b30">
-                                                            <div className="icon-bx-wraper bx-style-1 p-a30 center fly-box-ho">
-                                                                <h3>Instant Valuation </h3>
-                                                                <div className="icon-content">
-                                                                    <h5 className="dlab-tilte text-uppercase">BWP 750</h5>
-                                                                    <div >Get an instant report for your property estimate</div>
-                                                                </div>
-                                                                <div className="text-center">
-                                                                    <button className="site-button" style={{marginTop:'10px'}} onClick={() => { this.toggle('5'); }}>Proceed</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-6 col-md-12 col-sm-12 m-b30">
-                                                            <div className="icon-bx-wraper bx-style-1 p-a30 center fly-box-ho">
-                                                                <h3>Detailed Valuation</h3>
-                                                                <div className="icon-content">
-                                                                    <h5 className="dlab-tilte text-uppercase">BWP 1000</h5>
-                                                                    <div>Issue an instruction to a valuer perform valuation on property</div>
-                                                                </div>
-                                                                <div className="text-center">
-                                                                    <button className="site-button" style={{marginTop:'10px'}} onClick={() => { this.toggle('5'); }}>Proceed</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                <ReportTypeForm
+                                                    toggle = {this.toggle}/>
                                             </TabPane>
                                             <TabPane tabId="5">
-                                            <div className="bg-white text-black p-a30 p-t40 align-self-center">
-                                                <h2 className='text-primary'>Summary</h2>
-                                                <div className='row'>
-                                                    <div className="col-lg-12 col-md-12 col-sm-12 m-b30">
-                                                        <div className="icon-bx-wraper bx-style-1 p-a30 fly-box-ho">
-                                                            <div className="icon-content" style={{height: 'auto'}}>
-                                                                <div className='row'>
-                                                                    <div className='col-lg-4 col-md-6 col-sm-6 col-6'>
-                                                                    <h5>General </h5>
-                                                                        <h6>Cit</h6>
-                                                                        <div >Artesia</div>
-                                                                        <h6>Street</h6>
-                                                                        <div >Artesia</div>
-                                                                        <h6>Plot</h6>
-                                                                        <div >1</div>
-                                                                        <h6>Size</h6>
-                                                                        <div >3m</div>
-                                                                    </div>
-                                                                    <div className='col-lg-4 col-md-6 col-sm-6 col-6'>
-                                                                    <h5>Additional </h5>
-                                                                        <h6>Bedrooms</h6>
-                                                                        <div >1</div>
-                                                                        <h6>SittingRooms</h6>
-                                                                        <div >1</div>
-                                                                        <h6>Kitchens</h6>
-                                                                        <div >1</div>
-                                                                        <h6>Bathroom</h6>
-                                                                        <div >1</div>
-                                                                        <h6>Toilets</h6>
-                                                                        <div >1</div>
-                                                                        <h6>Garage</h6>
-                                                                        <div >1</div>
-                                                                    </div>
-                                                                    <div className='col-lg-4 col-md-4 col-sm-4'>
-                                                                        <h5>Extra </h5>
-                                                                        
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className='row'>
-                                                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mb-4 d-flex">
-                                                        <div className="calculate btn-block" >
-                                                            <button className="site-button btn-block" type="button" onClick={() => { this.toggle('1'); }}>Edit</button>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mb-4 d-flex">
-                                                        <div className="calculate btn-block" >
-                                                            <Link to={'/Auth'} className="site-button btn-block" type="button">Preceed checkout</Link>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                                <SummaryForm
+                                                    toggle = {this.toggle}/>
                                             </TabPane>								
                                         </TabContent>
                                     </div>	
