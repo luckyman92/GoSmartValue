@@ -9670,7 +9670,7 @@ ul[class*="list-"]{
     -moz-border-radius: 0 0 3px 3px;
 }
 .modal-header {
-    background: #EFBB20;
+    background: #9bca6a;
     padding: 15px 25px;
 }
 .modal-header .modal-title {
@@ -9678,6 +9678,7 @@ ul[class*="list-"]{
 }
 .modal .modal-body {
     padding: 25px;
+    height: 500px;
 }
 .modal-xlg {
     width: 1000px;

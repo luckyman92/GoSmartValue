@@ -11,17 +11,17 @@ class Register extends Component {
     return (
       <>
         {/* <Header /> */}
-        <div className="page-content bg-white">
+        <div className="page-content">
           <div className="section-full content-inner shop-account">
             <div className="container">
               <div className="row">
                 <div className="col-md-12 text-center">
-                  <h2 className="font-weight-700 m-t0 m-b30">Create New {userType} User Account</h2>
+                  <h2 className="font-weight-700 m-t0 m-b30 text-white">Create New {userType} User Account</h2>
                 </div>
               </div>
               <div className="row">
                 <div className="col-md-12 m-b30">
-                  <div className="p-a30 border-1  max-w500 m-auto">
+                  <div className="p-a30 border-1  max-w500 m-auto bg-white">
                     <div className="tab-content">
                       <form id="login" className="tab-pane active">
                         <h4 className="font-weight-700">PERSONAL INFORMATION</h4>

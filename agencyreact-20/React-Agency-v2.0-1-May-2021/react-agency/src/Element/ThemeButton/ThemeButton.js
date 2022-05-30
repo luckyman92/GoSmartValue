@@ -22,10 +22,12 @@ function MsgModal(props) {
 			show={props.msgModalVisible}
 			onHide={props.setMsgModal}
 			backdrop="static"
-			aria-labelledby="example-modal-sizes-title-lg"
+			aria-labelledby="contained-modal-title-vcenter"
+			centered
+			contentClassName='modal-height'
 		>
 			<Modal.Header closeButton>
-				<Modal.Title id="example-modal-sizes-title-lg" >
+				<Modal.Title id="contained-modal-title-vcenter" >
 					{activeTab === '1' ? <><i className="ti-email"></i> {'Leave a message'}</> : <><i className="flaticon-notebook"></i> {'Knowledge Base'}</>}
 				</Modal.Title>
 			</Modal.Header>
@@ -100,15 +102,15 @@ function MsgModal(props) {
 
 function ChatModal(props) {
 	const [activeTab, setActiveTab] = useState('1');
-	const [collapse, setCollapseTab] = useState(false);
+	// const [collapse, setCollapseTab] = useState(false);
 
   const toggle = tab => {
     if (activeTab !== tab) setActiveTab(tab);
   }
 
-	const collapseToggle = () => {
-    setCollapseTab(!collapse);
-  }
+	// const collapseToggle = () => {
+  //   setCollapseTab(!collapse);
+  // }
 
 	return(
 		<Modal
@@ -117,6 +119,7 @@ function ChatModal(props) {
 			onHide={props.setChatModal}
 			backdrop="static"
 			aria-labelledby="example-modal-sizes-title-lg"
+			centered
 		>
 			<Modal.Header closeButton>
 				<Modal.Title id="example-modal-sizes-title-lg" >

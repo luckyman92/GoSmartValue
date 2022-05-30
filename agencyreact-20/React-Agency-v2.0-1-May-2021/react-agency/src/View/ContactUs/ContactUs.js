@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
-// import Header from './../Layout/Header1';
-// import Footer from './../Layout/Footer1';
 
-import bgimg from './../../images/background/bg2.jpg';
+import bgimg from './../../images/1gosmartvalue/home/Home.png';
 
 class Contact extends Component {
 

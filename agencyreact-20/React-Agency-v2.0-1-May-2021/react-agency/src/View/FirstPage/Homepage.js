@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Slider from "react-slick";
+import { TabContent, TabPane, } from 'reactstrap';
 
-import Header from '../Header';
-import Footer from '../Footer';
-import Index4Tab from '../../Element/Index4Tab';
+import TabStyle1 from '../../View/FirstPage/TabStyle1';
 import ExploreCarousel from '../../Element/ExploreCarousel';
 import TestimonialStyle2 from '../../Element/TestimonialStyle2';
+import LocationForm from "../../View/FirstPage/LocationForm"
+import PropertyDetailsForm from '../../View/FirstPage/PropertyDetailsForm';
+import PropertyFeaturesForm from '../../View/FirstPage/PropertyFeaturesForm';
+
 
 //Images..
 import bg3 from '../../images/background/bg3.png';
 import bg17 from './../../images/background/bg17.jpg';
-import bgimg from './../../images/1gosmartvalue/home/Home.png';
+import bgimg from './../../images/1gosmartvalue/home/Home_3.png';
 import picjoin from './../../images/1gosmartvalue/home/join-us.png';
+import bgslider9 from './../../images/main-slider/slide9.jpg';
+
 
 
 const wraperBlog = [
@@ -41,6 +46,10 @@ function SamplePrevArrow(props) {
   } 
 
 class Homepage extends Component {
+    state = {
+        activeTab : '1'
+    }
+
     componentDidMount() {
         var i = 0;
 		
@@ -66,8 +75,16 @@ class Homepage extends Component {
 			});
 		}
     }
+    toggle = (tab) => {
+        if (this.state.activeTab !== tab) {
+            this.setState({
+                activeTab : tab
+            })
+        }
+    }
+    
     render() {
-
+            
         var settings = {
             color: 'black',		
 			arrows: true,
@@ -80,44 +97,130 @@ class Homepage extends Component {
 
         return (
             <>
-                <Header />
-
                 <div className="page-content bg-white rubik">
-
-					<div className="home-banner" style={{backgroundImage:"url("+ bgimg +")" }}>
-						<div className="home-bnr-inner">
-							<div className="home-bnr-content">
-								<h4 className="sub-title">GoSmartValue</h4>
-								<div className="home-bnr-btns">
-									{/* <Link to={"#"} className="site-button white btn-icon">Read more <i className="fa fa-angle-double-right"></i></Link>
-									<VideoPopup2 /> */}
-								</div>
-							</div>	
-						</div>
-					</div>
-
-                    {/* <!-- contact area --> */}
-                    <div className="content-block">
-                        {/* <!-- About Us --> */}
-                        <div className="section-full content-inner about-progress">
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-md-24 col-lg-12">
-                                        <h3 className="text-uppercase" style={{textAlign:'center'}}>Get The <span style={{color: '#FF8800'}}>Value </span>Of Your Property In Five Minutes!</h3>
+                    <div className="home-banner-2" style={{backgroundImage:"url("+ bgslider9 +")",paddingTop:'100px'}}>
+                        <div className="container">
+                            <h3 className="text-uppercase text-primary" style={{textAlign:'center'}}>Get The <span style={{color: '#FF8800'}}>Value </span>Of Your Property In Five Minutes!</h3>
+                            <TabStyle1
+                                toggle = {this.toggle}
+                                activeTab = {this.state.activeTab}/>
+                                <div className="home-bnr-inner-2 row align-items-center">
+                                    <div className="home-bnr-content-2 col-md-6" style={{height:'750px'}}>
+                                        <TabContent activeTab={this.state.activeTab}>
+                                            <TabPane tabId="1">
+                                                <LocationForm
+                                                    toggle = {this.toggle}/>
+                                            </TabPane>
+                                            <TabPane tabId="2">
+                                                <PropertyDetailsForm
+                                                    toggle = {this.toggle}/>
+                                            </TabPane>
+                                            <TabPane tabId="3">
+                                                <PropertyFeaturesForm
+                                                    toggle = {this.toggle}/>
+                                            </TabPane>
+                                            <TabPane tabId="4">
+                                                <div className="bg-white text-black p-a30 p-t40 align-self-center">
+                                                    <h2 className='text-primary'>Report Type</h2>
+                                                    <div className='row'>
+                                                        <div className="col-lg-6 col-md-12 col-sm-12 m-b30">
+                                                            <div className="icon-bx-wraper bx-style-1 p-a30 center fly-box-ho">
+                                                                <h3>Instant Valuation </h3>
+                                                                <div className="icon-content">
+                                                                    <h5 className="dlab-tilte text-uppercase">BWP 750</h5>
+                                                                    <div >Get an instant report for your property estimate</div>
+                                                                </div>
+                                                                <div className="text-center">
+                                                                    <button className="site-button" style={{marginTop:'10px'}} onClick={() => { this.toggle('5'); }}>Proceed</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-6 col-md-12 col-sm-12 m-b30">
+                                                            <div className="icon-bx-wraper bx-style-1 p-a30 center fly-box-ho">
+                                                                <h3>Detailed Valuation</h3>
+                                                                <div className="icon-content">
+                                                                    <h5 className="dlab-tilte text-uppercase">BWP 1000</h5>
+                                                                    <div>Issue an instruction to a valuer perform valuation on property</div>
+                                                                </div>
+                                                                <div className="text-center">
+                                                                    <button className="site-button" style={{marginTop:'10px'}} onClick={() => { this.toggle('5'); }}>Proceed</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </TabPane>
+                                            <TabPane tabId="5">
+                                            <div className="bg-white text-black p-a30 p-t40 align-self-center">
+                                                <h2 className='text-primary'>Summary</h2>
+                                                <div className='row'>
+                                                    <div className="col-lg-12 col-md-12 col-sm-12 m-b30">
+                                                        <div className="icon-bx-wraper bx-style-1 p-a30 fly-box-ho">
+                                                            <div className="icon-content" style={{height: 'auto'}}>
+                                                                <div className='row'>
+                                                                    <div className='col-lg-4 col-md-6 col-sm-6 col-6'>
+                                                                    <h5>General </h5>
+                                                                        <h6>Cit</h6>
+                                                                        <div >Artesia</div>
+                                                                        <h6>Street</h6>
+                                                                        <div >Artesia</div>
+                                                                        <h6>Plot</h6>
+                                                                        <div >1</div>
+                                                                        <h6>Size</h6>
+                                                                        <div >3m</div>
+                                                                    </div>
+                                                                    <div className='col-lg-4 col-md-6 col-sm-6 col-6'>
+                                                                    <h5>Additional </h5>
+                                                                        <h6>Bedrooms</h6>
+                                                                        <div >1</div>
+                                                                        <h6>SittingRooms</h6>
+                                                                        <div >1</div>
+                                                                        <h6>Kitchens</h6>
+                                                                        <div >1</div>
+                                                                        <h6>Bathroom</h6>
+                                                                        <div >1</div>
+                                                                        <h6>Toilets</h6>
+                                                                        <div >1</div>
+                                                                        <h6>Garage</h6>
+                                                                        <div >1</div>
+                                                                    </div>
+                                                                    <div className='col-lg-4 col-md-4 col-sm-4'>
+                                                                        <h5>Extra </h5>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className='row'>
+                                                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mb-4 d-flex">
+                                                        <div className="calculate btn-block" >
+                                                            <button className="site-button btn-block" type="button" onClick={() => { this.toggle('1'); }}>Edit</button>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mb-4 d-flex">
+                                                        <div className="calculate btn-block" >
+                                                            <Link to={'/Auth'} className="site-button btn-block" type="button">Preceed checkout</Link>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </TabPane>								
+                                        </TabContent>
+                                    </div>	
+                                    <div className="col-md-6">
+                                        <div className="curve-img">
+                                            <img src={bgimg} alt="" className="slide-img-curve"/>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        {/* <!-- About Us End --> */}
-                        {/* <!-- Tabs End --> */}
-                        <div className="section-full content-inner-2 tab-bx br-top" >
-                            <div className="container">
-                                <div className="">
-                                    <Index4Tab/>
-                                </div>
-                            </div>
-                        </div>
-                        {/* <!-- Testimonial End --> */}
+
+                    {/* <!-- contact area --> */}
+                    <div className="content-block">
+
                         {/* <!-- Why Chose Us --> */}
                         <div className="section-full bg-blue-light content-inner explore-projects" style={{ backgroundImage: "url(" + bg3 + ")" }}>
 							<div className="container">
@@ -227,9 +330,10 @@ class Homepage extends Component {
                     {/* <!-- contact area END --> */}
                 </div>
 
-                <Footer />
+                {/* <Footer /> */}
             </>
         )
     }
 }
+
 export default Homepage;

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 
 export function Valuation(props) {
@@ -10,7 +10,7 @@ export function Valuation(props) {
   return(
     <>
       <div className="page-content">
-        <div className="section-full content-inner bg-white">
+        <div className="section-full content-inner">
           <div className="container">
             <div className="row">
               {/* {wraperBlog.map((item,index)=>( */}
@@ -19,7 +19,7 @@ export function Valuation(props) {
                     <div className="icon-content">
                       <div className='row'>
                         <div className='col-lg-8 col-md-6 col-sm-6 m-b30'>
-                          <h5 className="dlab-tilte text-left">{props.title}</h5>
+                          <h5 className="dlab-tilte text-left text-white">{props.title}</h5>
                         </div>
                         <div className='col-lg-4 col-md-6 col-sm-6 m-b30'>
                           <span className="text-primary">BWP750</span>
@@ -36,7 +36,7 @@ export function Valuation(props) {
                     <div className="icon-content">
                       <div className='row'>
                         <div className='col-lg-8 col-md-6 col-sm-6 m-b30'>
-                          <h5 className="dlab-tilte text-left">{props.title}</h5>
+                          <h5 className="dlab-tilte text-left text-white">{props.title}</h5>
                         </div>
                         <div className='col-lg-4 col-md-6 col-sm-6 m-b30'>
                           <span className="text-primary">BWP750</span>
@@ -53,7 +53,7 @@ export function Valuation(props) {
                     <div className="icon-content">
                       <div className='row'>
                         <div className='col-lg-8 col-md-6 col-sm-6 m-b30'>
-                          <h5 className="dlab-tilte text-left">{props.title}</h5>
+                          <h5 className="dlab-tilte text-left text-white">{props.title}</h5>
                         </div>
                         <div className='col-lg-4 col-md-6 col-sm-6 m-b30'>
                           <span className="text-primary">BWP750</span>
@@ -65,6 +65,7 @@ export function Valuation(props) {
                     </div>
                   </div>
                 </div>
+                
               {/* ))} */}
             </div>
           </div>

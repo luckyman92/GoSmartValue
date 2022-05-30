@@ -46,8 +46,8 @@ class Header extends Component {
                             <div className="container clearfix">
 
                                 <div className="logo-header mostion">
-                                    <Link to={'./'} className="dez-page"><img src={smartlogo} alt="" /></Link>
-                                    <Link to={'./'} className="dez-page"><img src={smartMarkup} alt="" /></Link>
+                                    <Link to={'/home'} className="dez-page"><img src={smartlogo} alt="" /></Link>
+                                    <Link to={'/home'} className="dez-page"><img src={smartMarkup} alt="" /></Link>
                                 </div>
 
                                 <button className="navbar-toggler collapsed navicon justify-content-end" type="button"  data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,24 +58,24 @@ class Header extends Component {
 
                                 <div className="extra-nav">
                                     <div className="extra-cell">
-                                        <Link to={'#'} className="dez-page site-button primary">Login</Link>
-                                        {/* <Link to={'./contact'} className="dez-page site-button primary">Register</Link> */}
+                                        <Link to={'/Auth'} className="dez-page site-button primary">Login</Link>&nbsp;
+                                        <Link to={'/Auth'} className="dez-page site-button primary">Register</Link>
                                     </div>
                                 </div>
                                 <div className="header-nav navbar-collapse collapse myNavbar justify-content-end" id="navbarNavDropdown">
                                     {/*  Header Menu Contents  */}
 										<ul className="nav navbar-nav">
-                                            <li><Link to={'#'}>Subscriptions</Link>                                                
+                                            <li><Link to={'/Subscriptions'}>Subscriptions</Link>                                                
                                             </li>
-                                            <li><Link to={'#'}>Valuetions</Link>                                                
+                                            <li><Link to={'/Valuations'}>Valuations</Link>                                                
                                             </li>
-                                            <li><Link to={'#'}>Reports</Link>                                                
+                                            <li><Link to={'/Reports'}>Reports</Link>                                                
                                             </li>
-                                            <li><Link to={'#'}>Our Portfolio</Link>                                                
-                                            </li>
+                                            {/* <li><Link to={''}>Our Portfolio</Link>                                                
+                                            </li> */}
                                             <li><Link to={'#'}>News</Link>
                                             </li>
-                                            <li><Link to={'#'}>Contact us</Link>
+                                            <li><Link to={'/ContactUs'}>Contact us</Link>
                                             </li>
                                         </ul>
 									{/*  Header Menu Contents End */}

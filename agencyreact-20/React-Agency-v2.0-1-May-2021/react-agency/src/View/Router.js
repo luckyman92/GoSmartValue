@@ -3,17 +3,29 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import ThemeButton from '../Element/ThemeButton/ThemeButton';
 
 import Homepage from './FirstPage/Homepage';
-
-// import ScrollToTop from '../Element/ScrollToTop';
+import SubScriptions from './SubScriptions/SubScriptions';
+import Valuations from './Valuations/Valuations';
+import Reports from './Reports/Reports';
+import ContactUs from './ContactUs/ContactUs';
+import Auth from './Auth/Auth';
+import Header from './Header';
+import Footer from './Footer';
 
 class Router extends Component{
 	render(){
 		return(
-			<BrowserRouter basename="/index">
+			<BrowserRouter basename="/">
 				<div className="page-wraper">
+					<Header />
 					<Switch>
-						<Route path='/' exact component={Homepage} />
+						<Route path='/home' exact component={Homepage} />
+						<Route path='/Subscriptions' component={SubScriptions} />
+						<Route path='/Valuations' component={Valuations} />
+						<Route path='/Reports' component={Reports} />
+						<Route path='/ContactUs' component={ContactUs} />
+						<Route path='/Auth' component={Auth} />
 					</Switch>
+					<Footer />
 				</div>
 				<ThemeButton />
 			</BrowserRouter>	

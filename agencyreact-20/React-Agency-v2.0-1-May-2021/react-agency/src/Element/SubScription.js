@@ -79,7 +79,7 @@ export function SubScription(props) {
 		};
 		return(
 			<>
-			<div className="section-full content-inner bg-white">
+			<div className="section-full content-inner">
 				<div className="container">
 					<div className="row">
 						<div className="col-lg-4 col-md-6 col-sm-6 m-b30">
