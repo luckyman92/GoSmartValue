@@ -75,7 +75,7 @@ class ExploreCarousel extends Component{
         };
 		return(
 			<>
-				<Slider className="explore-carousel mfp-gallery owl-loaded owl-theme owl-carousel gallery owl-btn-center-lr owl-btn-2 primary " {...settings}>
+				<Slider className="dots-style-center img-carousel owl-carousel owl-btn-center-lr owl-btn-3 " {...settings}>
 					{contentBlog.map((data,index)=>(
 						<div className="item p-3" key={index}>
 							<SubScription />

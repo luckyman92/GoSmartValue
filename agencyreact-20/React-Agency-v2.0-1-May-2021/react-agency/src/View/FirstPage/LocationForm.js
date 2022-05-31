@@ -7,7 +7,7 @@ function LocationForm(props){
 				<h2 className='text-primary'>Location Details</h2>
 				<div className="row">
 					<div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-4">
-						<label>City/Town</label>
+						<label style={{color: 'rgb(74, 74, 74)'}}>City/Town</label>
 						<select className="form-control" >
 							<option>Select City/Town</option>
 							<option>Marketing</option>
@@ -19,25 +19,25 @@ function LocationForm(props){
 				</div>
 				<div className="row">
 					<div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-4">
-						<label>Street Name</label>
+						<label style={{color: 'rgb(74, 74, 74)'}}>Street Name</label>
 						<input type="text" className="form-control" placeholder="Plese write a street's name correctly." />
 					</div>
 				</div>
 				<div className="row">
 					<div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-4">
-						<label>Plot No</label>
+						<label style={{color: 'rgb(74, 74, 74)'}}>Plot No</label>
 						<input type="text" className="form-control" placeholder="Plese write a plot No correctly." />
 					</div>
 				</div>
 				<div className="row">
 					<div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-4">
-						<label>Plot Size(square meters)</label>
+						<label style={{color: 'rgb(74, 74, 74)'}}>Plot Size(square meters)</label>
 						<input type="text" className="form-control" placeholder="Plese write the street's name correctly." />
 					</div>
 				</div>
 				<div className="row">
 					<div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-4">
-						<label>Development stage</label>
+						<label style={{color: 'rgb(74, 74, 74)'}}>Development stage</label>
 						<select className="form-control">
 							<option>Select development stage</option>
 							<option>Marketing</option>

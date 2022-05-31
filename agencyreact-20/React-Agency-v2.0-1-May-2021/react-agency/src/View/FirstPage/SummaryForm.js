@@ -10,7 +10,7 @@ function ReportTypeForm(props){
                     <div className="col-lg-12 col-md-12 col-sm-12 m-b30">
                         <div className="icon-bx-wraper bx-style-1 p-a30 fly-box-ho">
                             <div className="icon-content" style={{height: 'auto'}}>
-                                <div className='row'>
+                                <div className='row' style={{color: 'rgb(74, 74, 74)'}}>
                                     <div className='col-lg-4 col-md-6 col-sm-6 col-6'>
                                     <h5>General </h5>
                                         <h6>Cit</h6>

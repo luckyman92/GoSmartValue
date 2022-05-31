@@ -7,31 +7,31 @@ function PropertyDetailsForm(props){
 				<h2 className='text-primary'>Property Details</h2>
 				<div className="row">
 					<div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-4">
-						<label>Number of Bedrooms</label>
+						<label style={{color: 'rgb(74, 74, 74)'}}>Number of Bedrooms</label>
 						<input type="number" className="form-control"/>
 					</div>
 				</div>
 				<div className="row">
 					<div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-4">
-						<label>Number of Kitchens</label>
+						<label style={{color: 'rgb(74, 74, 74)'}}>Number of Kitchens</label>
 						<input type="number" className="form-control"/>
 					</div>
 				</div>
 				<div className="row">
 					<div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-4">
-						<label>Number of SittingRooms</label>
+						<label style={{color: 'rgb(74, 74, 74)'}}>Number of SittingRooms</label>
 						<input type="number" className="form-control"/>
 					</div>
 				</div>
 				<div className="row">
 					<div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-4">
-						<label>Number of toilets</label>
+						<label style={{color: 'rgb(74, 74, 74)'}}>Number of toilets</label>
 						<input type="number" className="form-control"/>
 					</div>
 				</div>
 				<div className="row">
 					<div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-4">
-						<label>Number of garages</label>
+						<label style={{color: 'rgb(74, 74, 74)'}}>Number of garages</label>
 						<input type="number" className="form-control"/>
 					</div>
 				</div>

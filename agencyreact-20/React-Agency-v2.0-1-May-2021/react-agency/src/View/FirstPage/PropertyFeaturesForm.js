@@ -9,13 +9,13 @@ function PropertyDetailsForm(props){
 					<div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 mb-4">
 						<div className="form-group">
 							<input id="garage" type="checkbox" />
-                            <label htmlFor = "garage" style = {{color: 'black'}}>Garage</label>
+                            <label htmlFor = "garage" style={{color: 'rgb(74, 74, 74)'}}>Garage</label>
 						</div>
 					</div>
                     <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 mb-4">
 						<div className="form-group">
 							<input id = "SwimmingPool" type="checkbox" className="form-control"/>
-                            <label htmlFor = "SwimmingPool" style = {{color: 'black'}}>SwimmingPool</label>
+                            <label htmlFor = "SwimmingPool" style={{color: 'rgb(74, 74, 74)'}}>SwimmingPool</label>
 						</div>
 					</div>
 				</div>
@@ -23,13 +23,13 @@ function PropertyDetailsForm(props){
                     <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 mb-4">
 						<div className="form-group">
                             <input id = "WireFenced" type="checkbox" className="form-control"/>
-                            <label htmlFor = "WireFenced" style = {{color: 'black'}}>WireFenced</label>
+                            <label htmlFor = "WireFenced" style={{color: 'rgb(74, 74, 74)'}}>WireFenced</label>
 						</div>
 					</div>
                     <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 mb-4">
                         <div className="form-group">
                             <input id="ElectricFence" type="checkbox" />
-                            <label htmlFor = "ElectricFence" style = {{color: 'black'}}>ElectricFence</label>
+                            <label htmlFor = "ElectricFence" style={{color: 'rgb(74, 74, 74)'}}>ElectricFence</label>
                         </div>
                     </div>
 				</div>
@@ -37,13 +37,13 @@ function PropertyDetailsForm(props){
                     <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 mb-4">
                         <div className="form-group">
                             <input id = "FirePlace" type="checkbox" className="form-control"/>
-                            <label htmlFor = "FirePlace" style = {{color: 'black'}}>FirePlace</label>
+                            <label htmlFor = "FirePlace" style={{color: 'rgb(74, 74, 74)'}}>FirePlace</label>
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 mb-4">
                         <div className="form-group">
                             <input id = "BoundaryWall" type="checkbox" className="form-control"/>
-                            <label htmlFor = "BoundaryWall" style = {{color: 'black'}}>BoundaryWall</label>
+                            <label htmlFor = "BoundaryWall" style={{color: 'rgb(74, 74, 74)'}}>BoundaryWall</label>
                         </div>
                     </div>
 				</div>
@@ -51,13 +51,13 @@ function PropertyDetailsForm(props){
                     <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 mb-4">
                         <div className="form-group">
                             <input id = "Paved" type="checkbox" className="form-control"/>
-                            <label htmlFor = "Paved" style = {{color: 'black'}}>Paved</label>
+                            <label htmlFor = "Paved" style={{color: 'rgb(74, 74, 74)'}}>Paved</label>
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 mb-4">
                         <div className="form-group">
                             <input id = "MotorizedGate" type="checkbox" className="form-control"/>
-                            <label htmlFor = "MotorizedGate" style = {{color: 'black'}}>MotorizedGate</label>
+                            <label htmlFor = "MotorizedGate" style={{color: 'rgb(74, 74, 74)'}}>MotorizedGate</label>
                         </div>
                     </div>
 				</div>
@@ -65,7 +65,7 @@ function PropertyDetailsForm(props){
                     <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 mb-4">
                         <div className="form-group">
                             <input id = "OutdoorEntertainment" type="checkbox" className="form-control"/>
-                            <label htmlFor = "OutdoorEntertainment" style = {{color: 'black'}}>OutdoorEntertainment</label>
+                            <label htmlFor = "OutdoorEntertainment" style={{color: 'rgb(74, 74, 74)'}}>OutdoorEntertainment</label>
                         </div>
                     </div>
                 </div>
